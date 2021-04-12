@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1433
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatSockerApp", "ChatSockerApp\ChatSockerApp.csproj", "{2E8643CC-6AA5-4A73-A180-B1745554A764}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E8643CC-6AA5-4A73-A180-B1745554A764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E8643CC-6AA5-4A73-A180-B1745554A764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E8643CC-6AA5-4A73-A180-B1745554A764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E8643CC-6AA5-4A73-A180-B1745554A764}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F51E3BC-6241-44D2-A5EE-641E017FCE61}
+	EndGlobalSection
+EndGlobal
