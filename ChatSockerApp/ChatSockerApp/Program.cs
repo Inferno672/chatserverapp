@@ -24,20 +24,24 @@ namespace ChatSockerApp
                     if (serverSocket.ObtenerCliente())
                     {
                         Console.ForegroundColor = ConsoleColor.Cyan;
-                        Console.WriteLine("Cliente recibido!!");
-                        Console.WriteLine("S: Hola Cliente");
-                        serverSocket.Escribir("Hola cliente");
-                        //Mensaje hacia el cleinte
+                        string mensaje = "";
+                        while(mensaje.ToLower() != "chao")
+                        {
+                            string respuesta = serverSocket.Leer();
+                            Console.WriteLine("C:{0}", respuesta);
+                            if(respuesta.ToLower() != "chao")
+                            {
+                                Console.WriteLine("Diga lo que quiere decir:");
+                                mensaje = Console.ReadLine().Trim();
+                                Console.WriteLine("S:{0}", mensaje);
+                                serverSocket.Escribir(mensaje);
+                            }
+                            else
+                            {
+                                mensaje = "chao";
+                            }
 
-                        Console.WriteLine("Escriba un mensaje para el cliente");
-                        string mensaje = Console.ReadLine().Trim();
-                        Console.WriteLine("S:{0}", mensaje);
-                        serverSocket.Escribir(mensaje);
-                        //Mensahe recibido del Cliente
-
-                        string respuesta = serverSocket.Leer();
-                        Console.WriteLine("C:{0}", respuesta);
-
+                        }
                         serverSocket.CerrarConexion();
                     }
                 }
